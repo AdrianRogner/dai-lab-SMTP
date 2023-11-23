@@ -4,6 +4,20 @@ import java.io.*;
 public class Main {
     public static void main(String[] args){
 
-        System.out.println("test");
+        if(args.length != 3){
+            System.out.println("Pas assez d'arguments");
+        } else  {
+
+            for (String s : args) {
+                System.out.println(s);
+            }
+            
+
+        }
+
+
+
     }
+
+
 }
