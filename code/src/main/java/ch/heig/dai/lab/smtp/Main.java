@@ -1,9 +1,10 @@
-package code.src.main.java.ch.heig.dai.lab.smtp;
-import java.net.*;
+package ch.heig.dai.lab.smtp;
 import java.io.*;
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException {
 
-        System.out.println("test");
+        TcpClientApplication client = new TcpClientApplication();
+        client.openConnection();
+        client.sendRequest();
     }
 }
