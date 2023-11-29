@@ -3,8 +3,7 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        TcpClientApplication client = new TcpClientApplication();
-        client.openConnection();
-        client.sendRequest();
+        SmtpClient client = new SmtpClient();
+        client.sendEmail();
     }
 }
